@@ -46,10 +46,13 @@
 .menu li > * {
   transition: opacity var(--transition-hover);
 }
-.logo:hover,
-.nav__menu-btn:hover,
-.menu li > *:hover {
-  opacity: 0.5;
+
+@media screen and (pointer: fine) {
+  .logo:hover,
+  .nav__menu-btn:hover,
+  .menu li > *:hover {
+    opacity: 0.5;
+  }
 }
 
 .nav__menu-btn {

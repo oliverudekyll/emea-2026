@@ -4,7 +4,7 @@
 		<div class="section__header">
 			<h3 class="button--dark">Kontakt</h3>
 	<?php 
-	$links = get_field("lingid", "option");
+	$links = get_field("links", "option");
 	if ($links): 
 	?>
 		<ul class="footer__links">

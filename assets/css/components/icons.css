@@ -43,9 +43,11 @@
   transition: all 200ms ease-in-out;
 }
 
-.categories__list-item:hover .icon-arrow__path {
-  opacity: 1;
-  transform: translateY(0%);
+@media screen and (pointer: fine) {
+  .categories__list-item:hover .icon-arrow__path {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 @media screen and (width < 1000px) {
@@ -61,5 +63,10 @@
 
   .footer-icon {
     height: var(--padding-lg);
+  }
+
+  .categories__list-item:hover .icon-arrow__path {
+    opacity: 0;
+    transform: translateY(100%);
   }
 }
