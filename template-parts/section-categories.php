@@ -19,11 +19,18 @@
                 $categories_query->the_post(); 
                 $post_count++;
                 $icon = get_field('icon');
+                $icon_light = get_field('icon_light');
+
+                if ($icon_light):
+                    $link_icon = $icon_light;
+                else:
+                    $link_icon = $icon;
+                endif;
             ?>
                <li>
                 <a class="categories__list-item" href="<?php the_permalink(); ?>">
-                    <?php if ($icon): ?>
-                        <img  src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>">
+                    <?php if ($link_icon): ?>
+                        <img  src="<?php echo esc_url($link_icon['url']); ?>" alt="<?php echo esc_attr($link_icon['alt']); ?>">
                     <?php endif; ?>
                     <?php the_title(); 
                     get_template_part("template-parts/icons/icon","arrow")
