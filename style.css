@@ -1,0 +1,29 @@
+/*
+Theme Name: EMEA 2026
+Theme URI: https://emea.ee/
+Author: EMEA Team
+Author URI: https://emea.ee/
+Description: A modern WordPress theme for EMEA 2026
+Version: 1.0.0
+Requires at least: 4.5
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: emea-2026
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*
+ * All styles have been organized into modular files in the assets/css/ directory:
+ * 
+ * - base/       : Reset, variables, fonts, typography, global styles
+ * - layout/     : Header, footer, sections
+ * - components/ : Buttons, icons, news-grid, nominees, categories, article, feed
+ * - pages/      : Landing page and other page-specific styles
+ * 
+ * These files are enqueued in functions.php in the proper order.
+ */

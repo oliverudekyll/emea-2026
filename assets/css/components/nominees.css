@@ -1,0 +1,96 @@
+/* Nominees component */
+
+.nominees-container {
+  position: relative;
+  padding: var(--padding-lg) 0;
+  flex: 1;
+
+  display: flex;
+  flex-flow: column;
+  gap: var(--padding-lg);
+
+  transition: opacity 300ms ease-in-out;
+  scroll-margin-top: var(--sizes-header-height);
+}
+
+.nominees__category {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--padding-lg);
+}
+
+.category__title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--font-line-height-trim);
+
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  hyphenate-limit-chars: 6 3 3;
+}
+
+.category__nominees-list {
+  display: flex;
+  flex-flow: column;
+}
+
+.category__nominee {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.1;
+}
+
+.category__nominee--winner {
+  color: var(--color-purple);
+  order: -1;
+}
+
+.nominees__year-menu {
+  position: sticky;
+  bottom: 2rem;
+}
+
+.year-menu__list {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  gap: var(--padding-sm);
+}
+
+.year-menu__list-item {
+  position: relative;
+  padding: var(--padding-xs) var(--padding);
+  border-radius: var(--padding);
+
+  font-size: 1rem;
+  font-weight: var(--font-weight-medium);
+
+  color: var(--color-light);
+  background-color: var(--color-dark);
+
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.year-menu__list-item--active {
+  background-color: var(--color-purple);
+  color: var(--color-light);
+}
+
+@media screen and (width < 1000px) {
+  .nominees__category {
+    position: relative;
+
+    display: flex;
+    flex-flow: column;
+    gap: var(--padding-sm);
+  }
+
+  .nominees-container {
+    padding: var(--padding) 0;
+  }
+}

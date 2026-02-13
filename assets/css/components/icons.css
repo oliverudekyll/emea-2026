@@ -1,0 +1,65 @@
+/* Icon components */
+
+.footer-icon-container {
+  position: relative;
+  width: 100%;
+  padding-top: var(--padding-lg);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.footer-icon {
+  height: var(--padding-xl);
+}
+
+.footer-icon * {
+  fill: var(--color-dark);
+}
+
+.footer-icon--light * {
+  fill: var(--color-light);
+}
+
+.icon-arrow {
+  height: 2.5rem;
+  width: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.icon-arrow__path {
+  height: 100%;
+  opacity: 0;
+  transform: translateY(100%);
+
+  transition: all 200ms ease-in-out;
+}
+
+.categories__list-item:hover .icon-arrow__path {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+@media screen and (width < 1000px) {
+  .footer-icon-container {
+    position: relative;
+    width: 100%;
+    padding-top: var(--padding);
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .footer-icon {
+    height: var(--padding-lg);
+  }
+}

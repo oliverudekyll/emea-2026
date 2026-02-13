@@ -1,0 +1,18 @@
+/* Typography styles */
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+
+  line-height: var(--font-line-height-body);
+}
+
+strong {
+  font-weight: var(--font-weight-medium);
+}
+
+button,
+a {
+  cursor: pointer;
+}

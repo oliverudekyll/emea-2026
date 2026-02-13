@@ -1,0 +1,41 @@
+/* Global base styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-dark);
+
+  overflow-x: hidden;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.site-main {
+  position: relative;
+  top: var(--sizes-header-height);
+}
+
+.not-found {
+  min-height: var(--sizes-content-height);
+  padding: var(--padding) var(--padding-lg);
+
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-light);
+
+  display: flex;
+  flex-flow: column;
+  gap: var(--padding);
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-purple);
+}
+
+.not-found .button--dark {
+  font-size: var(--font-size-body);
+}

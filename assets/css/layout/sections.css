@@ -1,0 +1,84 @@
+/* Section layout styles */
+
+.section {
+  position: relative;
+  min-height: calc(100dvh - var(--sizes-header-height));
+  /* height: calc(100dvh - var(--sizes-header-height)); */
+  width: 100%;
+  padding: var(--padding) var(--padding-lg);
+  padding-bottom: var(--padding-lg);
+
+  display: flex;
+  flex-flow: column;
+  gap: var(--padding);
+
+  overflow: hidden;
+  scroll-margin-top: var(--sizes-header-height);
+}
+
+.section__header {
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Section background colors */
+#uudised {
+  position: relative;
+
+  display: flex;
+  flex-flow: column;
+  gap: var(--padding);
+  justify-content: space-between;
+
+  background-color: var(--color-purple);
+}
+
+#nominendid {
+  height: auto;
+  overflow: visible;
+  background-color: var(--color-light);
+}
+
+#nominendid .section__header {
+  /* position: sticky !important; */
+  /* top: calc(var(--sizes-header-height) + var(--padding)); */
+  background-color: var(--color-light);
+  z-index: 10;
+}
+
+#kategooriad {
+  background-color: var(--color-green);
+}
+
+#kontakt {
+  background-color: var(--color-orange);
+  top: var(--sizes-header-height);
+}
+
+@media screen and (width < 1000px) {
+  .section {
+    position: relative;
+    min-height: calc(100dvh - var(--sizes-header-height));
+    height: auto;
+    width: 100%;
+    padding: var(--padding);
+    padding-bottom: var(--padding-lg);
+
+    display: flex;
+    flex-flow: column;
+    gap: var(--padding);
+
+    overflow: hidden;
+    scroll-margin-top: var(--sizes-header-height);
+  }
+
+  #uudised,
+  #kontakt,
+  #kategooriad {
+    gap: var(--padding-lg);
+  }
+}

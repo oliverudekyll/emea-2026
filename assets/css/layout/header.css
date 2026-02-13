@@ -1,0 +1,124 @@
+/* Header & Navigation */
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: var(--sizes-header-height);
+  padding: var(--padding) var(--padding-lg);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+
+  background-color: var(--color-dark);
+  color: var(--color-light);
+
+  z-index: var(--z-index-top);
+}
+
+.logo {
+  height: 1.35rem;
+}
+
+.logo * {
+  fill: var(--color-light);
+}
+
+.nav {
+  height: fit-content;
+}
+
+.menu {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: var(--padding-lg);
+
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+}
+.logo,
+.nav__menu-btn,
+.menu li > * {
+  transition: opacity var(--transition-hover);
+}
+.logo:hover,
+.nav__menu-btn:hover,
+.menu li > *:hover {
+  opacity: 0.5;
+}
+
+.nav__menu-btn {
+  display: none;
+}
+
+.menu-item--tickets {
+  padding: var(--padding-xs) var(--padding-sm);
+  border-radius: var(--padding);
+
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+@media screen and (width < 1000px) {
+  .header {
+    padding: var(--padding);
+  }
+  .menu {
+    position: fixed;
+    /* top: var(--sizes-header-height); */
+    top: 0;
+    right: 0;
+    width: 100%;
+    /* height: var(--sizes-content-height); */
+    height: 100%;
+    padding: var(--padding);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: var(--padding);
+
+    display: flex;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+
+    background-color: var(--color-dark);
+
+    transform: translateX(100%);
+    transition: transform var(--transition-hover);
+
+    z-index: -1;
+  }
+
+  .nav__menu-btn {
+    /* position: absolute; */
+    height: 100%;
+    top: 0;
+    right: 0;
+    /* padding: var(--padding); */
+
+    display: block;
+    text-align: right;
+
+    z-index: 1001;
+  }
+
+  .nav.toggled .menu {
+    /* display: flex; */
+    transform: translateX(0%);
+  }
+
+  .menu-item--tickets {
+    padding: var(--padding-sm) var(--padding);
+    border-radius: var(--padding-lg);
+
+    background-color: var(--color-light);
+    color: var(--color-dark);
+  }
+}

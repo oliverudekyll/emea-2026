@@ -1,0 +1,49 @@
+:root {
+  --font-family: "Neue Haas Grotesk", "Helvetica", "Arial", sans-serif;
+  --font-size-sm: 1rem;
+  --font-size-body: 1.25rem;
+  --font-size-btn: 1.375rem;
+  --font-size-lg: 3.5rem;
+  --font-line-height-body: 1.28;
+  --font-line-height-sm: 1;
+  --font-line-height-trim: 0.9;
+
+  --font-weight-regular: 500;
+  --font-weight-medium: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  --padding: 1rem;
+  --padding-xs: calc(var(--padding) * 0.25);
+  --padding-sm: calc(var(--padding) * 0.5);
+  --padding-md: calc(var(--padding) * 1.5);
+  --padding-lg: calc(var(--padding) * 2);
+  --padding-xl: calc(var(--padding) * 4);
+  --padding-xxl: calc(var(--padding) * 8);
+
+  --color-light: #dcdcdc;
+  --color-light--hover: hsl(0, 0%, 56%);
+  --color-dark: #141414;
+  --color-dark--hover: hsl(0, 0%, 8%);
+  --color-purple: #9f4fea;
+  --color-green: #43b07b;
+  --color-orange: #f97448;
+
+  --sizes-body-line-height-gap: calc(
+    var(--font-size-body) * var(--font-line-height-body)
+  );
+  --sizes-header-height: 57px;
+  --sizes-content-height: calc(100dvh - var(--sizes-header-height));
+  --z-index-top: 999;
+
+  --transition-hover: 250ms ease-in-out;
+}
+
+@media screen and (width < 1000px) {
+  :root {
+    --font-size-lg: 1.6rem;
+    --font-size-body: 1rem;
+    --font-size-sm: 0.85rem;
+    --font-size-btn: 1rem;
+  }
+}
