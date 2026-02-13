@@ -76,7 +76,7 @@
 }
 
 .footer__logos-list img {
-  height: var(--padding-lg);
+  height: var(--padding);
   max-width: var(--padding-xxl);
   object-fit: contain;
 }
@@ -112,5 +112,17 @@
 
   #kontakt .section__header {
     align-items: flex-start;
+  }
+
+  .footer__logos-list {
+    position: relative;
+    width: fit-content;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-flow: row wrap;
+    gap: var(--padding);
   }
 }
