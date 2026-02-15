@@ -76,18 +76,24 @@
 }
 
 .footer__logos-list img {
-  height: var(--padding);
+  height: var(--sizes-body-line-height-gap);
   max-width: var(--padding-xxl);
   object-fit: contain;
 }
 
 @media screen and (width < 1000px) {
+  .footer__content-wrapper {
+    gap: var(--padding-lg);
+  }
+
   .footer__team {
     position: relative;
 
     /* display: flex;
     flex-flow: column; */
     grid-template-columns: repeat(2, 1fr);
+    gap: var(--padding-sm);
+    row-gap: var(--padding);
   }
 
   .team-card__img {
@@ -103,6 +109,8 @@
     flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
+
+    gap: var(--padding-lg);
   }
 
   .footer__links {
