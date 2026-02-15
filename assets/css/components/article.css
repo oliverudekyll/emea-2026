@@ -142,8 +142,7 @@
 
 @media screen and (width < 1000px) {
   .article__header-container {
-    padding: var(--padding);
-    padding-bottom: var(--padding-lg);
+    padding: var(--padding-lg) var(--padding);
 
     gap: var(--padding);
   }
