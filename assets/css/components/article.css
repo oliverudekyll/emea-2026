@@ -141,6 +141,18 @@
 }
 
 @media screen and (width < 1000px) {
+  .article__header-container {
+    padding: var(--padding);
+    padding-bottom: var(--padding-lg);
+
+    gap: var(--padding);
+  }
+
+  .article__content {
+    padding: var(--padding);
+    padding-top: 0;
+  }
+
   .global-header__icon {
     height: var(--padding-lg);
   }
