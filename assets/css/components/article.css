@@ -156,7 +156,6 @@
 
   .article__thumbnail {
     padding: 0;
-    padding: 0 var(--padding);
   }
 
   .article__thumbnail img {
