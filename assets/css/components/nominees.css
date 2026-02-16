@@ -51,14 +51,56 @@
 .nominees__year-menu {
   position: sticky;
   bottom: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--padding);
+
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--padding);
+}
+
+.year-menu__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+
+  color: var(--color-light);
+  background-color: var(--color-dark);
+
+  cursor: pointer;
+  transition:
+    opacity 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+}
+
+.year-menu__arrow:not(:disabled):hover {
+  background-color: var(--color-purple);
+}
+
+.year-menu__arrow:disabled {
+  opacity: 1 !important;
+  background-color: var(--color-light--hover);
 }
 
 .year-menu__list {
   display: flex;
-
   justify-content: center;
   align-items: center;
   gap: var(--padding-sm);
+
+  flex: 1;
+  min-width: 0;
 }
 
 .year-menu__list-item {
@@ -74,6 +116,10 @@
 
   cursor: pointer;
   transition: all 200ms ease-in-out;
+}
+
+.year-menu__list-item:not(.year-menu__list-item--active):hover {
+  color: var(--color-light--hover);
 }
 
 .year-menu__list-item--active {
@@ -92,5 +138,19 @@
 
   .nominees-container {
     padding: var(--padding) 0;
+  }
+
+  .nominees__year-menu {
+    width: 400px;
+  }
+
+  .year-menu__arrow {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .year-menu__arrow svg {
+    width: 18px;
+    height: 18px;
   }
 }
