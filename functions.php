@@ -252,7 +252,7 @@ function emea_load_nominees_by_year() {
 						<?php
 						if ( $inner_nominees ) :
 							?>
-							<ul>
+							<ul class="category__nominees-list">
 								<?php
 								foreach ( $inner_nominees as $nominee ) :
 									$name = isset( $nominee['name'] ) ? $nominee['name'] : '';
@@ -266,8 +266,8 @@ function emea_load_nominees_by_year() {
 									
 									if ( $name ) :
 										?>
-										<li>
-											<p class="<?php echo $nominee_class; ?>"><?php echo esc_html( $name ); ?></p>
+										<li class="<?php echo $nominee_class; ?>">
+											<p><?php echo esc_html( $name ); ?></p>
 										</li>
 										<?php
 									endif;
