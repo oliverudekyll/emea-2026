@@ -3,6 +3,7 @@
 .article {
   position: relative;
   padding-bottom: var(--padding-lg);
+  min-height: var(--sizes-content-height);
 
   display: flex;
   flex-flow: column;
@@ -105,6 +106,7 @@
 .article-category {
   position: relative;
   padding: var(--padding-lg);
+  min-height: var(--sizes-content-height);
 
   display: flex;
   flex-flow: column;
