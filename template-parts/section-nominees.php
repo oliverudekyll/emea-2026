@@ -26,7 +26,7 @@
     ?>
 <section class="section" id="nominendid">
     <div class="section__header">
-        <h2 class="button--dark">Nominendid</h2>
+        <h2 class="button--dark">Nominendid ja võitjad</h2>
         <a href="<?php echo esc_url($gallery_link); ?>" 
            id="nominees-gallery-link" 
            class="button--dark" 

@@ -58,6 +58,9 @@ get_header();
 <?php 
     get_template_part("template-parts/section", "categories")
     ?>
+<?php 
+    get_template_part("template-parts/section", "contact")
+    ?>
     
 
 

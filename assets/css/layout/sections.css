@@ -56,7 +56,7 @@
 
 #kontakt {
   background-color: var(--color-orange);
-  top: var(--sizes-header-height);
+  /* top: var(--sizes-header-height); */
 }
 
 @media screen and (width < 1000px) {
