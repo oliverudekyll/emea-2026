@@ -109,6 +109,7 @@
     flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
+    padding-top: var(--padding-lg);
 
     gap: var(--padding-lg);
   }
