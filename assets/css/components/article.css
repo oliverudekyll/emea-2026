@@ -2,6 +2,7 @@
 
 .article {
   position: relative;
+  padding-bottom: var(--padding-lg);
 
   display: flex;
   flex-flow: column;
