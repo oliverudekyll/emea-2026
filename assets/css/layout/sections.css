@@ -28,6 +28,7 @@
 /* Section background colors */
 #uudised {
   position: relative;
+  height: var(--sizes-content-height);
 
   display: flex;
   flex-flow: column;
@@ -80,5 +81,9 @@
   #kontakt,
   #kategooriad {
     gap: var(--padding-lg);
+  }
+
+  #uudised {
+    height: auto;
   }
 }
