@@ -1,17 +1,10 @@
 <?php
-    // Query the nominees list posts to get the active one
+    // Query the nominees list posts to get the most recent year (by title)
     $nominees_query = new WP_Query(array(
         'post_type' => 'nominee_list',
         'posts_per_page' => 1,
-        'orderby' => 'date',
-        'order' => 'DESC',
-        'meta_query' => array(
-            array(
-                'key' => 'is_active',
-                'value' => '1',
-                'compare' => '='
-            )
-        )
+        'orderby' => 'title',
+        'order' => 'DESC'
     ));
     
     // Store the active post ID and gallery link
@@ -42,15 +35,8 @@
     $nominees_query = new WP_Query(array(
         'post_type' => 'nominee_list',
         'posts_per_page' => 1,
-        'orderby' => 'date',
-        'order' => 'DESC',
-        'meta_query' => array(
-            array(
-                'key' => 'is_active',
-                'value' => '1',
-                'compare' => '='
-            )
-        )
+        'orderby' => 'title',
+        'order' => 'DESC'
     ));
     
     if ($nominees_query->have_posts()) :
@@ -116,7 +102,7 @@
                 $year_menu_query = new WP_Query(array(
                     'post_type' => 'nominee_list',
                     'posts_per_page' => -1,
-                    'orderby' => 'date',
+                    'orderby' => 'title',
                     'order' => 'DESC'
                 ));
                 
