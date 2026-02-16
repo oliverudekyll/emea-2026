@@ -153,4 +153,13 @@
     width: 18px;
     height: 18px;
   }
+
+  .year-menu__arrow {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .year-menu__list-item {
+    font-size: var(--font-size-sm);
+  }
 }
