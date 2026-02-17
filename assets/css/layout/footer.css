@@ -77,6 +77,12 @@
   gap: var(--padding);
 }
 
+.footer__info {
+  display: flex;
+  flex-flow: column;
+  gap: var(--padding);
+}
+
 .footer__logos-list img {
   height: var(--sizes-body-line-height-gap);
   max-width: var(--padding-xxl);
@@ -135,5 +141,9 @@
     align-items: flex-end;
     flex-flow: row wrap;
     gap: var(--padding);
+  }
+
+  .footer__info {
+    gap: var(--padding-sm);
   }
 }

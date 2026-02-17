@@ -39,17 +39,28 @@
 			</ul>
 			</div>
 		<?php endif; 
-		$footer = get_field("footer", "option");
+		$footer = get_field("footer_info", "option");
 		$logos = get_field("logos", "option");
 		?>
 		<div class="footer__footer">
 			<?php 
-			if ($footer): ?>
-			<div>
-				<h4><?php echo $footer['title']; ?></h4>
-				<p><?php echo $footer['body']; ?></p>
-			</div>
-			<?php
+			if ($footer): 
+                ?>
+            <div class="footer__info">
+
+                <?php 
+                foreach($footer as $footer_block):
+            ?>
+
+<div>
+    <h4><?php echo $footer_block['title']; ?></h4>
+    <p><?php echo $footer_block['body']; ?></p>
+</div>
+<?php
+            endforeach;
+            ?>
+            </div>
+            <?php 
 		endif;
 		if ($logos):
 			 ?>
