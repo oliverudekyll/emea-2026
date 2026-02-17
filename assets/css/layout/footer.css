@@ -23,6 +23,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--padding);
+  row-gap: var(--padding-lg);
 }
 
 .footer__team-card {
@@ -57,6 +58,7 @@
 }
 
 .footer__footer {
+  padding-top: var(--padding-lg);
   display: flex;
 
   justify-content: space-between;
