@@ -142,8 +142,4 @@
     flex-flow: row wrap;
     gap: var(--padding);
   }
-
-  .footer__info {
-    gap: var(--padding-sm);
-  }
 }
