@@ -61,6 +61,7 @@
   max-width: 100%;
   margin: 0 auto;
   padding: 0 var(--padding);
+  z-index: 1;
 }
 
 .year-menu__arrow {
