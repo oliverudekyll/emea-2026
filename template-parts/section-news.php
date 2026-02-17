@@ -28,7 +28,7 @@
             ?>
                 <article class="news-post">
                     <a href="<?php the_permalink(); ?>" class="news-post-link">
-                        <?php the_post_thumbnail('medium'); ?>
+                        <?php the_post_thumbnail('large'); ?>
                         <div class="news-overlay">
                             <h3><?php the_title(); ?></h3>
                         </div>

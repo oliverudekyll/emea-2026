@@ -4,6 +4,7 @@
   position: relative;
   padding: var(--padding) var(--padding-lg);
   padding-bottom: var(--padding-lg);
+  min-height: var(--sizes-content-height);
 
   display: flex;
   flex-flow: column;
