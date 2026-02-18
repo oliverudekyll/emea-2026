@@ -4,7 +4,7 @@
 		<div class="section__header">
 			<h3 class="button--dark">Kontakt</h3>
 	<?php 
-	$links = get_field("links", "option");
+	$links = get_field("contact_links");
 	if ($links): 
 	?>
 		<ul class="footer__links">
@@ -21,7 +21,7 @@
 ?>
 	</div>	
 	<?php 
-		$team = get_field("team", "option");
+		$team = get_field("contact_team");
 		if ($team): 
 		?>
 			<ul class="footer__team">
@@ -39,8 +39,8 @@
 			</ul>
 			</div>
 		<?php endif; 
-		$footer = get_field("footer_info", "option");
-		$logos = get_field("logos", "option");
+		$footer = get_field("contact_info");
+		$logos = get_field("contact_logos");
 		?>
 		<div class="footer__footer">
 			<?php 

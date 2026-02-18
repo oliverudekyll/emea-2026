@@ -5,7 +5,7 @@
         {
             "key": "field_6988416ab3e6c",
             "label": "Lingid",
-            "name": "links",
+            "name": "contact_links",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -68,7 +68,7 @@
         {
             "key": "field_698841e0b3e6f",
             "label": "Tiim",
-            "name": "team",
+            "name": "contact_team",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -160,7 +160,7 @@
         {
             "key": "field_698842afb3e73",
             "label": "Logod",
-            "name": "logos",
+            "name": "contact_logos",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -229,67 +229,9 @@
             ]
         },
         {
-            "key": "field_69884302b3e76",
-            "label": "Jaluse tekst",
-            "name": "footer",
-            "aria-label": "",
-            "type": "group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_6988787020dba",
-                    "label": "Pealkiri",
-                    "name": "title",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
-                    "key": "field_6988788a20dbb",
-                    "label": "Sisu",
-                    "name": "body",
-                    "aria-label": "",
-                    "type": "wysiwyg",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "tabs": "all",
-                    "toolbar": "full",
-                    "media_upload": 1,
-                    "delay": 0
-                }
-            ]
-        },
-        {
             "key": "field_69944ec9a3f28",
             "label": "Jaluse info",
-            "name": "footer_info",
+            "name": "contact_footer",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -356,9 +298,9 @@
     "location": [
         [
             {
-                "param": "options_page",
+                "param": "page",
                 "operator": "==",
-                "value": "kontakt"
+                "value": "24"
             }
         ]
     ],
@@ -371,5 +313,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1771327251
+    "modified": 1771419555
 }
